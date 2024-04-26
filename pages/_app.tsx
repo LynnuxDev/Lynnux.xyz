@@ -11,6 +11,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </Head>
         {/* Gtag - Script */}
+        <Script src="https://cdn.lynnux.xyz/assets/lynnux.js"/>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-YSD2Q72W1H" strategy="afterInteractive"/>
         <Script id="google-analytics" strategy="afterInteractive">
             {`

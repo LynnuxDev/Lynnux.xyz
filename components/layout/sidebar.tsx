@@ -19,7 +19,7 @@ const sidebar: React.FC = () => {
             <h1 className="name" title="Lynnux">Lynnux</h1>
             <p className="title">Developer / Artist</p>
         </div>
-        <button className="info_more-btn" onClick={toggleSidebar}>
+        <button className="info_more-btn" data-sidebar-btn>
             <span>Show Contacts</span>
             <ChevronDownOutline color={'#ffdb70'} title={'dropdown'} height="30px" width="30px" />
         </button>

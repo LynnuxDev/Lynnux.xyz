@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Img from 'next/image';
 import { addClickEventToModalItems, addClickEventToModalCloseBtn, addClickEventToOverlay } from '@/components/typescript/testimonials';
 import { CloseOutline } from 'react-ionicons'
+import test from '@/components/typescript/test';
 
 import { ElementToggleFunction, FilterFunction } from '@/components/typescript/types';
 
@@ -157,6 +158,35 @@ const about: React.FC<AboutProps> = ({active}) => {
                     </li>
                     </ul>
                 </section>
+                {/* testimonials */}
+                <section className="testimonials">
+                    <h3 className="h3 testimonials-title">Testimonials</h3>
+                    <ul className="testimonials-list has-scrollbar">
+                    <li className="testimonials-item" onClick={() => test("kekw")}>
+                        <div className="content-card">
+                        <figure className="testimonials-avatar-box">
+                            <img src="./assets/images/Mycelia.webp" alt="Mycelia.webp" width="60"/>
+                        </figure>
+                        <h4 className="h4 testimonials-item-title">Mycelia</h4>
+                        <div className="testimonials-text">
+                            <p>Lynnux is a detailed professional who care's deeply for their work. Their Lifeguard Mercy Emotes have engaged and created funny moments in my chat. If you're looking for a passionate artist to deliver your creative vision, look no further!</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li className="testimonials-item">
+                        <div className="content-card">
+                        <figure className="testimonials-avatar-box">
+                            <img src="/assets/images/avatar-2.png" alt="PlaceHolder" width="60"/>
+                        </figure>
+                        <h4 className="h4 testimonials-item-title">PlaceHolder</h4>
+                        <div className="testimonials-text" >
+                            <p>This is a PlaceHolder because i didnt get any testimonials yet</p>
+                        </div>
+                        </div>
+                    </li>
+                    </ul>
+                </section>
+
             </article>
         );
     } else {
